@@ -1,6 +1,9 @@
-export{soma};
-function soma(val1, val2) {
-    return val1 + val2;
+export { soma };
+
+
+
+function soma(texto, val1, val2) {
+    return texto + ": " + (val1 + val2);
 }
 
 

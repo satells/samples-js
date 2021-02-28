@@ -9,32 +9,25 @@ var btnSubmit = document.querySelector(".btnSubmit");
 console.log(btnSend);
 console.log(btnSubmit);
 
+var body = document.body;
+    body.addEventListener("click", (event)=>{
+        console.log("carregado");
+
+
+    });
 
 
 
 btnSend.addEventListener("click", (event) => {
-    var numeros = [1, 2, 3, 4, 5, 6, 78, 9, "Rua desembargador rocha portala"];
-    console.log(numeros);
-
-    console.log(soma(1974, 1974));
-
-    var nome = "Mauro Sergio de Sá Telles";
-    console.log(nome.toLowerCase());
-    console.log(nome.repeat(10));
-    for (let i = 0; i < numeros.length; i++) {
-        console.log(numeros[i]);
-
-    }
-    numeros = [];
-
-
-
-    console.log(numeros);
-
-
-    numeros.concat()
+    console.log(soma("soma é", 50, 99));
+    console.log(document.body);
+});
+var i = 0;
+btnSend.addEventListener("mouseover", (event) => {
+    console.log("mouse over." + i++);
 
 });
+
 
 btnSubmit.addEventListener("click", (event) => {
     console.log("submiting");
