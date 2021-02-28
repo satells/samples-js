@@ -1,11 +1,12 @@
-export { soma };
+
+export { soma, simpleFunction };
 
 
 
-function soma(texto, val1, val2) {
+let soma = (texto, val1, val2) => {
     return texto + ": " + (val1 + val2);
 }
 
 
-
+var simpleFunction = () => { return "simple functionfds"; }
 
