@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="tab">
+        <button data-index="0" class="active">Cadastro</button>
+        <button data-index="1">Consulta</button>
+    </div>
+    <!-- Tab content -->
+    <div data-index=0>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        <form action="">
+            Nome: <input type="text" name="nome" />
+            Data: <input type="text" name="data" />
+        </form>
+    </div>
+    <div data-index=1 style="display:none">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

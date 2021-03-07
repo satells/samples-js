@@ -6,37 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <style>
+        .container {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        
+        .responsive-iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+        </style>
+        
 </head>
 
 <body>
 
+<button id="myBtn">Open modal</button>
 
 
-    <div class="tab">
-        <button data-index="0" class="active">Cadastro</button>
-        <button data-index="1">Consulta</button>
-    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
 
-    <!-- Tab content -->
-    <div data-index=0>
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-        <form action="">
-            Nome: <input type="text" name="nome" />
-            Data: <input type="text" name="data" />
-        </form>
+<div class="container"></div>
+        <iframe src="./form.html" class="responsive-iframe"></iframe>
 
-    </div>
 
-    <div data-index=1 style="display:none">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
 
+        </div>
     </div>
 </body>
 
-<script src="js/script.js"></script>
+
+<script src="js/modal.js"></script>
 
 </html>

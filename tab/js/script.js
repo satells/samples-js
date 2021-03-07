@@ -7,7 +7,7 @@ const tabEvent = () => {
     var tab = document.querySelector(".tab");
 
     var tabButtons = document.querySelectorAll("button[data-index]");
-    var tabContent = document.querySelectorAll("div[data-index]");
+    var tabContents = document.querySelectorAll("div[data-index]");
 
     const eventTab = (event) => {
         if (event.target instanceof HTMLDivElement) {
@@ -22,10 +22,10 @@ const tabEvent = () => {
         tabButtons[indexNext].removeAttribute("class");
 
 
-        tabContent[index].style.display = "none";
-        tabContent[indexNext].style.display = "none";
+        tabContents[index].style.display = "none";
+        tabContents[indexNext].style.display = "none";
 
-        tabContent[index].style.display = "block";
+        tabContents[index].style.display = "block";
         tabButtons[index].className += "active";
     }
 
