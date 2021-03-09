@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normilize.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
+
+    <style>
+        .group {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: auto 1fr;
+            border: solid;
+            border-color: blue;
+        }
+
+        .line {
+            display: grid;
+            grid: subgrid;
+            margin: 0.5em;
+            border: solid;
+            padding: 0.5em;
+        }
+
+        label {
+            grid-column: 1;
+        }
+
+        input {
+            grid-column: 2;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+
+
+    <form action="">
+
+        <div>
+            <label for='email'>E-mail:</label>
+            <input type='email' id='email' name='email'>
+        </div>
+
+        <div>
+            <label for='subject'>Assunto:</label>
+            <input type='text' id='subject'>
+        </div>
+        <div>
+            <label for='content'>Mensagem:</label>
+            <textarea id='content'></textarea>
+        </div>
+    </form>
+
+    <div>
+        <div class="group" style="display: inline-block;">
+            <div class="line"><label for="fn">Name</label><input name="fn"></div>
+            <div class="line"><label for="address">Address</label><input name="address"></div>
+            <div class="line"><label for="phone">Phone</label><input name="phone"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
+
 </html>
